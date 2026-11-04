@@ -29,6 +29,15 @@ def write(path, content):
 
 
 def main():
+    # README is the source of truth for handwritten disk comments.
+    comments = {}
+    readme = ROOT / 'README.md'
+    if readme.exists():
+        for line in readme.read_text(encoding='utf-8').splitlines():
+            fields = line.split('|')
+            if len(fields) == 8 and fields[1].strip().startswith('[KBU-'):
+                name = fields[1].strip().split(']')[0][1:]
+                comments[name] = fields[6].strip()
     mounts = json.loads(subprocess.check_output(
         ['findmnt', '--json', '--list', '--output', 'SOURCE,TARGET,FSTYPE,UUID'], text=True))['filesystems']
     mounts = [m for m in mounts if Path(m['target']).name.startswith('KBU-')]
@@ -73,13 +82,14 @@ def main():
         rows.append(disk)
     lines = ['# KBU ディスク一覧', '', f'取得日時: {now}', '',
              f'今回マウントされている KBU: **{len(rows)} 台**', '',
-             '| ディスク | 全容量 | 空き容量 | 直下の項目数 | 取得状況 |', '|---|---:|---:|---:|---|']
+             '| ディスク | 全容量 | 空き容量 | 直下の項目数 | 取得状況 | 内容・コメント |', '|---|---:|---:|---:|---|---|']
     for d in rows:
         lines.append(f'| [{d["name"]}](disks/{d["name"]}/README.md) | '
                      f'{human(d["total_bytes"]) if "total_bytes" in d else "不明"} | '
                      f'{human(d["available_bytes"]) if "available_bytes" in d else "不明"} | '
-                     f'{len(d["entries"])} | {d["status"]} |')
-    lines += ['', '## 更新方法', '', '```bash', 'python3 scripts/catalog.py', '```', '',
+                     f'{len(d["entries"])} | {d["status"]} | {comments.get(d["name"], "未整理")} |')
+    lines += ['', '線量の変更履歴・格子定数の詳細は [Hirata 実験の記録](analysis/hirata_conditions.md)を参照。', '',
+              '「内容・コメント」列はこの README で直接編集できます。目録を再取得しても保持されます。表の区切りと衝突するため、コメント内の縦棒は `&#124;` と記入してください。', '', '## 更新方法', '', '```bash', 'python3 scripts/catalog.py', '```', '',
               'Linux の findmnt と Python 3 を使用します。HDD への書き込みやデータの変更は行いません。',
               '容量は 1024 基準です。ディレクトリ内部の走査、サイズ集計、バックアップ内容の照合は未実施です。',
               '一覧は今回接続中のディスクのみ。接続されていないディスクの既存の目録は削除しません。',
