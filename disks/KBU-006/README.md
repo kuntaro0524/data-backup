@@ -1,0 +1,17 @@
+# KBU-006
+
+取得日時: 2026-11-04T12:21:11+09:00
+
+UUID: `8a2b4956-7f1d-4ea2-bcf3-0849dbafd2ca`
+
+直下のみを取得。ディレクトリ内の容量・件数は未計測。隠し項目も含み、リンクは辿りません。
+
+| 名前 | 種類 | ファイルサイズ |
+|---|---|---:|
+| 220705-dose-slicing | directory | — |
+| 240128-HirotaHCA | directory | — |
+| 241224-Shihoya-reproc | directory | — |
+| BL32XU_250422_Hirota | directory | — |
+| BL32XU_250625_Hirota | directory | — |
+| shioi | directory | — |
+| rsync.com | file | 184.0 B |

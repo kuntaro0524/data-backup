@@ -1,0 +1,34 @@
+{
+  "name": "KBU-008",
+  "mount": {
+    "source": "/dev/sdl",
+    "target": "/media/kuntaro/KBU-008",
+    "fstype": "ext4",
+    "uuid": "f2254591-7645-4dfa-9a27-6b40c2419518"
+  },
+  "collected_at": "2026-11-04T12:21:11+09:00",
+  "entries": [
+    {
+      "name": "BL32XU_250714_Hirata",
+      "type": "directory"
+    },
+    {
+      "name": "ZOO_archives",
+      "type": "directory"
+    },
+    {
+      "name": "README",
+      "type": "file",
+      "size_bytes": 108
+    },
+    {
+      "name": "rsync.com",
+      "type": "file",
+      "size_bytes": 66
+    }
+  ],
+  "errors": [],
+  "total_bytes": 19919928582144,
+  "available_bytes": 13482861359104,
+  "status": "complete"
+}

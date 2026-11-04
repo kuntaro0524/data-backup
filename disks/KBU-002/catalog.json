@@ -1,0 +1,45 @@
+{
+  "name": "KBU-002",
+  "mount": {
+    "source": "/dev/sdm",
+    "target": "/media/kuntaro/KBU-002",
+    "fstype": "ext4",
+    "uuid": "f291ce8a-8331-4434-a988-a14f362a4a2e"
+  },
+  "collected_at": "2026-11-04T12:21:11+09:00",
+  "entries": [
+    {
+      "name": "ayamashita",
+      "type": "directory"
+    },
+    {
+      "name": "mat-HCA",
+      "type": "directory"
+    },
+    {
+      "name": "nogi",
+      "type": "directory"
+    },
+    {
+      "name": "sengoku",
+      "type": "directory"
+    },
+    {
+      "name": "trypsin-swsx",
+      "type": "directory"
+    },
+    {
+      "name": "yoshikazu",
+      "type": "directory"
+    },
+    {
+      "name": "rsync.com",
+      "type": "file",
+      "size_bytes": 91
+    }
+  ],
+  "errors": [],
+  "total_bytes": 15873633447936,
+  "available_bytes": 156508000256,
+  "status": "complete"
+}

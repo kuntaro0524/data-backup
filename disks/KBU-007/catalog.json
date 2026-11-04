@@ -1,0 +1,74 @@
+{
+  "name": "KBU-007",
+  "mount": {
+    "source": "/dev/sdc",
+    "target": "/media/kuntaro/KBU-007",
+    "fstype": "ext4",
+    "uuid": "f03dcba2-61ca-4fa6-bd98-80524fa8a85b"
+  },
+  "collected_at": "2026-11-04T12:21:11+09:00",
+  "entries": [
+    {
+      "name": "BL32XU_250201_Hirata",
+      "type": "directory"
+    },
+    {
+      "name": "BL32XU_250208_Hirata",
+      "type": "directory"
+    },
+    {
+      "name": "BL32XU_250611_Hirata",
+      "type": "directory"
+    },
+    {
+      "name": "EvaluateXDS",
+      "type": "directory"
+    },
+    {
+      "name": "PubMed4DiffMet",
+      "type": "directory"
+    },
+    {
+      "name": "lost+found",
+      "type": "directory"
+    },
+    {
+      "name": "matome",
+      "type": "directory"
+    },
+    {
+      "name": "esa_loader.log",
+      "type": "file",
+      "size_bytes": 73718
+    },
+    {
+      "name": "rsync.com",
+      "type": "file",
+      "size_bytes": 84
+    },
+    {
+      "name": "rsync2.com",
+      "type": "file",
+      "size_bytes": 84
+    },
+    {
+      "name": "rsync4.com",
+      "type": "file",
+      "size_bytes": 98
+    },
+    {
+      "name": "rsync5.com",
+      "type": "file",
+      "size_bytes": 98
+    },
+    {
+      "name": "rsync6.com",
+      "type": "file",
+      "size_bytes": 170
+    }
+  ],
+  "errors": [],
+  "total_bytes": 19919928582144,
+  "available_bytes": 12802094690304,
+  "status": "complete"
+}

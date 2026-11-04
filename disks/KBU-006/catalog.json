@@ -1,0 +1,45 @@
+{
+  "name": "KBU-006",
+  "mount": {
+    "source": "/dev/sdd",
+    "target": "/media/kuntaro/KBU-006",
+    "fstype": "ext4",
+    "uuid": "8a2b4956-7f1d-4ea2-bcf3-0849dbafd2ca"
+  },
+  "collected_at": "2026-11-04T12:21:11+09:00",
+  "entries": [
+    {
+      "name": "220705-dose-slicing",
+      "type": "directory"
+    },
+    {
+      "name": "240128-HirotaHCA",
+      "type": "directory"
+    },
+    {
+      "name": "241224-Shihoya-reproc",
+      "type": "directory"
+    },
+    {
+      "name": "BL32XU_250422_Hirota",
+      "type": "directory"
+    },
+    {
+      "name": "BL32XU_250625_Hirota",
+      "type": "directory"
+    },
+    {
+      "name": "shioi",
+      "type": "directory"
+    },
+    {
+      "name": "rsync.com",
+      "type": "file",
+      "size_bytes": 184
+    }
+  ],
+  "errors": [],
+  "total_bytes": 19919928582144,
+  "available_bytes": 4711984070656,
+  "status": "complete"
+}

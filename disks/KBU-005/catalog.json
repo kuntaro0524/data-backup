@@ -1,0 +1,81 @@
+{
+  "name": "KBU-005",
+  "mount": {
+    "source": "/dev/sdf",
+    "target": "/media/kuntaro/KBU-005",
+    "fstype": "ext4",
+    "uuid": "e460921d-f768-43c0-9b48-0a419aeae905"
+  },
+  "collected_at": "2026-11-04T12:21:11+09:00",
+  "entries": [
+    {
+      "name": "230629-benztryp",
+      "type": "directory"
+    },
+    {
+      "name": "231012-ZOOlogs",
+      "type": "directory"
+    },
+    {
+      "name": "231130-kobayashi",
+      "type": "directory"
+    },
+    {
+      "name": "231211-PSII",
+      "type": "directory"
+    },
+    {
+      "name": "250125-AmyReview",
+      "type": "directory"
+    },
+    {
+      "name": "BL32XU_231130_Kobayashi",
+      "type": "directory"
+    },
+    {
+      "name": "BL32XU_240214_adachi",
+      "type": "directory"
+    },
+    {
+      "name": "BL32XU_241008_Kobayashi",
+      "type": "directory"
+    },
+    {
+      "name": "BL32XU_241028_Kobayashi",
+      "type": "directory"
+    },
+    {
+      "name": "BL32XU_241126_Kobayashi",
+      "type": "directory"
+    },
+    {
+      "name": "BL32XU_241211_Kobayashi",
+      "type": "directory"
+    },
+    {
+      "name": "BL32XU_250129_Kobayashi",
+      "type": "directory"
+    },
+    {
+      "name": "Shioi",
+      "type": "directory"
+    },
+    {
+      "name": "XDS2024",
+      "type": "directory"
+    },
+    {
+      "name": "hirota",
+      "type": "directory"
+    },
+    {
+      "name": "rsync.sh",
+      "type": "file",
+      "size_bytes": 82
+    }
+  ],
+  "errors": [],
+  "total_bytes": 15873633447936,
+  "available_bytes": 3987922477056,
+  "status": "complete"
+}

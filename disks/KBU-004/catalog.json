@@ -1,0 +1,45 @@
+{
+  "name": "KBU-004",
+  "mount": {
+    "source": "/dev/sdj",
+    "target": "/media/kuntaro/KBU-004",
+    "fstype": "ext4",
+    "uuid": "7b2a365f-21e7-4b5c-be4e-948cdf4b2a31"
+  },
+  "collected_at": "2026-11-04T12:21:11+09:00",
+  "entries": [
+    {
+      "name": "180522-180628_AsadaAT2R",
+      "type": "directory"
+    },
+    {
+      "name": "181010-hattori-phase",
+      "type": "directory"
+    },
+    {
+      "name": "240115-PH_matome",
+      "type": "directory"
+    },
+    {
+      "name": "240306-DoseSlicing",
+      "type": "directory"
+    },
+    {
+      "name": "SunoHgSAD",
+      "type": "directory"
+    },
+    {
+      "name": "lost+found",
+      "type": "directory"
+    },
+    {
+      "name": "DB_2019B_2023A.tar.gz",
+      "type": "file",
+      "size_bytes": 270827111
+    }
+  ],
+  "errors": [],
+  "total_bytes": 15873633447936,
+  "available_bytes": 6659189370880,
+  "status": "complete"
+}

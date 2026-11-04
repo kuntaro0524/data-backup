@@ -1,0 +1,24 @@
+{
+  "name": "KBU-R001",
+  "mount": {
+    "source": "/dev/sdk",
+    "target": "/media/kuntaro/KBU-R001",
+    "fstype": "ext4",
+    "uuid": "aa53d17a-c290-472d-8d6e-9e3346394603"
+  },
+  "collected_at": "2026-11-04T12:21:11+09:00",
+  "entries": [
+    {
+      "name": "TEST",
+      "type": "directory"
+    },
+    {
+      "name": "lost+found",
+      "type": "directory"
+    }
+  ],
+  "errors": [],
+  "total_bytes": 15873633447936,
+  "available_bytes": 15073555722240,
+  "status": "complete"
+}

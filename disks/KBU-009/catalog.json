@@ -1,0 +1,20 @@
+{
+  "name": "KBU-009",
+  "mount": {
+    "source": "/dev/sdg",
+    "target": "/media/kuntaro/KBU-009",
+    "fstype": "ext4",
+    "uuid": "867d5f8c-1684-4c3d-8338-c38a31494354"
+  },
+  "collected_at": "2026-11-04T12:21:11+09:00",
+  "entries": [
+    {
+      "name": "lost+found",
+      "type": "directory"
+    }
+  ],
+  "errors": [],
+  "total_bytes": 15873633447936,
+  "available_bytes": 15073571610624,
+  "status": "complete"
+}
