@@ -6,7 +6,7 @@
 
 | ディスク | 全容量 | 空き容量 | 直下の項目数 | 取得状況 | 内容・コメント |
 |---|---:|---:|---:|---|---|
-| [KBU-002](disks/KBU-002/README.md) | 14.4 TiB | 145.8 GiB | 7 | complete | 未整理 |
+| [KBU-002](disks/KBU-002/README.md) | 14.4 TiB | 145.8 GiB | 7 | complete | ayamashita（230124）、mat-HCA（trypsin・toma等）、nogi（210715・220126・221018）、sengoku、trypsin-swsx、yoshikazuを収録。trypsin-swsxは230207のCSVでtrypsin・dose_ds=10・10°収集設定。その他の詳細・コピー照合は未確認。 |
 | [KBU-004](disks/KBU-004/README.md) | 14.4 TiB | 6.1 TiB | 7 | complete | 未整理 |
 | [KBU-005](disks/KBU-005/README.md) | 14.4 TiB | 3.6 TiB | 16 | complete | 未整理 |
 | [KBU-006](disks/KBU-006/README.md) | 18.1 TiB | 4.3 TiB | 7 | complete | 未整理 |
