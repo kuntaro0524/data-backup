@@ -7,7 +7,7 @@
 | ディスク | 全容量 | 空き容量 | 直下の項目数 | 取得状況 | 内容・コメント |
 |---|---:|---:|---:|---|---|
 | [KBU-002](disks/KBU-002/README.md) | 14.4 TiB | 145.8 GiB | 7 | complete | ayamashita（230124：共同研究のデータ処理。全データが揃っておらず、利用価値は限定的かもしれない／実験者コメント）、mat-HCA（【非常に重要】まつうら氏との共著論文に使用したデータ。trypsin・toma等）、nogi（210715・220126・221018：共同研究データ。論文化済みで、今後の利用優先度は低い／実験者コメント）、sengoku（コラボの可能性を考えて保管しているが、おそらく今後は参照しない／実験者コメント）、trypsin-swsx、yoshikazu（おそらくお蔵入りのデータで不要。削除可／実験者判断。データ本体は未削除）を収録。trypsin-swsxはまつうら氏・なかやま氏が収集。クライオプロテクタントを入れるだけで結晶の構造が変わる可能性を示す結果として保管しているが、本人は今後使わないかもしれない（実験者コメント）。230207のCSVではtrypsin・dose_ds=10・10°収集設定。その他の詳細・コピー照合は未確認。 |
-| [KBU-004](disks/KBU-004/README.md) | 14.4 TiB | 6.1 TiB | 7 | complete | 未整理 |
+| [KBU-004](disks/KBU-004/README.md) | 14.4 TiB | 6.1 TiB | 7 | complete | 単著論文に使用したデータ（実験者確認）。180522-180628_AsadaAT2R：浅田氏AT2Rの大量マージ。181010-hattori-phase：はっとり氏の大量マージ。240115-PH_matome：Polyhedraの大量マージ。240306-DoseSlicing：シグナル積算のHelicalデータ（サーモリシン）。SunoHgSAD：すの氏のHgSAD。DB_2019B_2023A.tar.gzの内容は未確認。 |
 | [KBU-005](disks/KBU-005/README.md) | 14.4 TiB | 3.6 TiB | 16 | complete | 未整理 |
 | [KBU-006](disks/KBU-006/README.md) | 18.1 TiB | 4.3 TiB | 7 | complete | 未整理 |
 | [KBU-007](disks/KBU-007/README.md) | 18.1 TiB | 11.6 TiB | 13 | complete | Hirata の2025/02/01・02/08・06/11収集分：10 MGyトリプシンとして利用可能。その他は未整理。 |
