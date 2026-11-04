@@ -1,17 +1,13 @@
 {
-  "name": "KBU-R001",
+  "name": "KBU-C3K-008",
   "mount": {
     "source": "/dev/sdk",
-    "target": "/media/kuntaro/KBU-R001",
+    "target": "/media/kuntaro/KBU-C3K-008",
     "fstype": "ext4",
     "uuid": "aa53d17a-c290-472d-8d6e-9e3346394603"
   },
-  "collected_at": "2026-11-04T12:34:25+09:00",
+  "collected_at": "2026-11-04T15:12:13+09:00",
   "entries": [
-    {
-      "name": "TEST",
-      "type": "directory"
-    },
     {
       "name": "lost+found",
       "type": "directory"
@@ -19,6 +15,6 @@
   ],
   "errors": [],
   "total_bytes": 15873633447936,
-  "available_bytes": 15073555722240,
+  "available_bytes": 15073571610624,
   "status": "complete"
 }

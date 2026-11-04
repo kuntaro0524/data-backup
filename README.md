@@ -4,9 +4,9 @@
 
 各ディスク名から、ディレクトリ別のコメント・重要度・解析状況を確認できます。
 
-取得日時: 2026-11-04T12:34:25+09:00
+取得日時: 2026-11-04T15:12:13+09:00
 
-今回マウントされている KBU: **8 台**
+今回マウントされている KBU: **14 台**
 
 | ディスク | 全容量 | 空き容量 | 直下の項目数 | 取得状況 | 内容・コメント |
 |---|---:|---:|---:|---|---|
@@ -16,8 +16,14 @@
 | [KBU-006](disks/KBU-006/README.md) | 18.1 TiB | 4.3 TiB | 7 | complete | 用途・重要度の聞き取りは未実施。次の整理対象。 |
 | [KBU-007](disks/KBU-007/README.md) | 18.1 TiB | 11.6 TiB | 13 | complete | 2025/02/01・02/08・06/11の10 MGyトリプシン：利用可能。その他は未整理。 |
 | [KBU-008](disks/KBU-008/README.md) | 18.1 TiB | 12.3 TiB | 4 | complete | 2025/07/14・20〜22の5 MGy×2回設定のトリプシン：利用可能。変更日の正確な境界は未確定。 |
-| [KBU-009](disks/KBU-009/README.md) | 14.4 TiB | 13.7 TiB | 1 | complete | 直下はlost+foundのみ。ほぼ空。改名を検討中。 |
-| [KBU-R001](disks/KBU-R001/README.md) | 14.4 TiB | 13.7 TiB | 2 | complete | ほぼ空だがTESTあり。用途・削除可否は未確認。改名を検討中。 |
+| [KBU-C3K-001](disks/KBU-C3K-001/README.md) | 18.1 TiB | 18.1 TiB | 1 | complete | 未整理 |
+| [KBU-C3K-002](disks/KBU-C3K-002/README.md) | 16.3 TiB | 16.3 TiB | 1 | complete | 未整理 |
+| [KBU-C3K-003](disks/KBU-C3K-003/README.md) | 16.3 TiB | 16.3 TiB | 1 | complete | 未整理 |
+| [KBU-C3K-004](disks/KBU-C3K-004/README.md) | 18.1 TiB | 18.1 TiB | 1 | complete | 未整理 |
+| [KBU-C3K-005](disks/KBU-C3K-005/README.md) | 16.3 TiB | 16.3 TiB | 1 | complete | 未整理 |
+| [KBU-C3K-006](disks/KBU-C3K-006/README.md) | 16.3 TiB | 16.3 TiB | 1 | complete | 未整理 |
+| [KBU-C3K-007](disks/KBU-C3K-007/README.md) | 14.4 TiB | 13.7 TiB | 1 | complete | 未整理 |
+| [KBU-C3K-008](disks/KBU-C3K-008/README.md) | 14.4 TiB | 13.7 TiB | 1 | complete | 未整理 |
 
 線量の変更履歴・格子定数の詳細は [Hirata 実験の記録](analysis/hirata_conditions.md)を参照。
 
@@ -33,5 +39,4 @@ Linux の findmnt と Python 3 を使用します。HDD への書き込みやデ
 容量は 1024 基準です。ディレクトリ内部の走査、サイズ集計、バックアップ内容の照合は未実施です。
 一覧は今回接続中のディスクのみ。接続されていないディスクの既存の目録は削除しません。
 各ディスクの catalog.json に UUID・マウント先・バイト単位の容量・取得エラーを保存します。
-
 各ディスクの詳細コメントは `disks/<ディスク名>/README.md` の `disk-notes:start` / `disk-notes:end` コメント間で編集できます。この範囲は目録更新時にも保持されます。

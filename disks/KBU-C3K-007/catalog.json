@@ -1,12 +1,12 @@
 {
-  "name": "KBU-009",
+  "name": "KBU-C3K-007",
   "mount": {
     "source": "/dev/sdg",
-    "target": "/media/kuntaro/KBU-009",
+    "target": "/media/kuntaro/KBU-C3K-007",
     "fstype": "ext4",
     "uuid": "867d5f8c-1684-4c3d-8338-c38a31494354"
   },
-  "collected_at": "2026-11-04T12:34:25+09:00",
+  "collected_at": "2026-11-04T15:12:13+09:00",
   "entries": [
     {
       "name": "lost+found",

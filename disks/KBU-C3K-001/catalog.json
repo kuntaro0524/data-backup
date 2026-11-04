@@ -1,0 +1,20 @@
+{
+  "name": "KBU-C3K-001",
+  "mount": {
+    "source": "/dev/sdn",
+    "target": "/media/kuntaro/KBU-C3K-001",
+    "fstype": "ext4",
+    "uuid": "4911c191-7f85-4d93-a037-fe2b07b2580c"
+  },
+  "collected_at": "2026-11-04T15:12:13+09:00",
+  "entries": [
+    {
+      "name": "lost+found",
+      "type": "directory"
+    }
+  ],
+  "errors": [],
+  "total_bytes": 19919928582144,
+  "available_bytes": 19919911780352,
+  "status": "complete"
+}
