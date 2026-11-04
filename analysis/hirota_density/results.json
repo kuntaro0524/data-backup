@@ -1,0 +1,68 @@
+{
+  "sources": {
+    "TBOC": "merge_ccc_1.31S_CRY1PHR_TBOC/cc_1.94A_final/cluster_0054/run_03/ccp4",
+    "AN174": "merge_ccc_1.31S_CRY1PHR_AN174/cc_2.21A_final/cluster_0063/run_03/ccp4"
+  },
+  "base": "/media/kuntaro/KBU-005/hirota/_kamoproc",
+  "common_resolution_A": 2.21,
+  "map_method": "Existing FWT/PHWT and DELFWT/PHDELWT; cut both at 2.21 A; FFT sample_rate=3; each map normalized to global mean 0 / standard deviation 1.",
+  "limitations": [
+    "Existing model-phased maps, not independent omit maps.",
+    "No new refinement, ligand fitting, or chemical identification.",
+    "Non-isomorphous cells: no direct Fo-Fo map calculated.",
+    "Atom-center density is descriptive, not RSCC or model validation."
+  ],
+  "reference_locator": "6KX5 chain A DYR (KL044); aligned by common chain A CA atoms",
+  "reference_alignment_CA": 463,
+  "models": {
+    "TBOC": {
+      "cell": [
+        44.47,
+        79.68,
+        129.06
+      ],
+      "spacegroup": "P 21 21 21",
+      "reference_ligand_atoms": 26,
+      "reference_ligand_atoms_overlapping_protein_lt_2A": 0,
+      "positive_fofc_over_3sigma_at_reference_atoms": 11,
+      "max_fofc_at_reference_atoms_sigma": 5.817131042480469,
+      "regions": {
+        "residues_451_453": {
+          "CA_count": 3,
+          "mean_2fofc_at_CA_sigma": 2.1643901268641152,
+          "min_2fofc_at_CA_sigma": 1.6537131071090698
+        },
+        "residues_485_492": {
+          "CA_count": 8,
+          "mean_2fofc_at_CA_sigma": 0.9832979217171669,
+          "min_2fofc_at_CA_sigma": -0.8338476419448853
+        }
+      }
+    },
+    "AN174": {
+      "cell": [
+        45.55,
+        77.36,
+        134.32
+      ],
+      "spacegroup": "P 21 21 21",
+      "reference_ligand_atoms": 26,
+      "reference_ligand_atoms_overlapping_protein_lt_2A": 0,
+      "positive_fofc_over_3sigma_at_reference_atoms": 8,
+      "max_fofc_at_reference_atoms_sigma": 5.493906497955322,
+      "regions": {
+        "residues_451_453": {
+          "CA_count": 3,
+          "mean_2fofc_at_CA_sigma": 2.109523336092631,
+          "min_2fofc_at_CA_sigma": 1.811596393585205
+        },
+        "residues_485_492": {
+          "CA_count": 8,
+          "mean_2fofc_at_CA_sigma": 1.7424586825072765,
+          "min_2fofc_at_CA_sigma": 0.3227193057537079
+        }
+      }
+    }
+  },
+  "global_CA_rmsd_A": 0.8740367908027946
+}

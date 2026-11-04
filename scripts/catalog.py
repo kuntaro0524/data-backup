@@ -8,6 +8,23 @@ from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+NOTES_START = '<!-- disk-notes:start -->'
+NOTES_END = '<!-- disk-notes:end -->'
+
+
+def preserved_notes(path):
+    if not path.exists():
+        return ''
+    content = path.read_text(encoding='utf-8')
+    if NOTES_START not in content and NOTES_END not in content:
+        return ''
+    if content.count(NOTES_START) != 1 or content.count(NOTES_END) != 1:
+        raise ValueError(f'Invalid disk comment markers: {path}')
+    start = content.index(NOTES_START)
+    end = content.index(NOTES_END)
+    if end < start:
+        raise ValueError(f'Invalid disk comment marker order: {path}')
+    return content[start:end + len(NOTES_END)]
 
 
 def human(value):
@@ -70,7 +87,11 @@ def main():
         disk['status'] = 'partial' if disk['errors'] else 'complete'
         base = ROOT / 'disks' / path.name
         write(base / 'catalog.json', json.dumps(disk, ensure_ascii=False, indent=2) + '\n')
-        lines = [f'# {path.name}', '', f'取得日時: {now}', '',
+        notes = preserved_notes(base / 'README.md')
+        lines = [f'# {path.name}', '', '[全ディスク一覧へ](../../README.md)', '']
+        if notes:
+            lines += [notes, '']
+        lines += ['## 最上階層の目録', '', f'取得日時: {now}', '',
                  f'UUID: `{mount.get("uuid") or "unknown"}`', '',
                  '直下のみを取得。ディレクトリ内の容量・件数は未計測。隠し項目も含み、リンクは辿りません。', '',
                  '| 名前 | 種類 | ファイルサイズ |', '|---|---|---:|']
@@ -80,7 +101,9 @@ def main():
             lines += ['', '取得エラー:', '', *[f'- {cell(e)}' for e in disk['errors']]]
         write(base / 'README.md', '\n'.join(lines) + '\n')
         rows.append(disk)
-    lines = ['# KBU ディスク一覧', '', f'取得日時: {now}', '',
+    lines = ['# KBU ディスク一覧', '', '[作業の引き継ぎ・次に調査する内容](HANDOFF.md)', '',
+             '各ディスク名から、ディレクトリ別のコメント・重要度・解析状況を確認できます。', '',
+             f'取得日時: {now}', '',
              f'今回マウントされている KBU: **{len(rows)} 台**', '',
              '| ディスク | 全容量 | 空き容量 | 直下の項目数 | 取得状況 | 内容・コメント |', '|---|---:|---:|---:|---|---|']
     for d in rows:
@@ -90,6 +113,7 @@ def main():
                      f'{len(d["entries"])} | {d["status"]} | {comments.get(d["name"], "未整理")} |')
     lines += ['', '線量の変更履歴・格子定数の詳細は [Hirata 実験の記録](analysis/hirata_conditions.md)を参照。', '',
               '「内容・コメント」列はこの README で直接編集できます。目録を再取得しても保持されます。表の区切りと衝突するため、コメント内の縦棒は `&#124;` と記入してください。', '', '## 更新方法', '', '```bash', 'python3 scripts/catalog.py', '```', '',
+              '各ディスクの詳細コメントは disks/<ディスク名>/README.md の disk-notes:start / disk-notes:end コメント間で編集してください。この範囲は目録更新時にも保持されます。',
               'Linux の findmnt と Python 3 を使用します。HDD への書き込みやデータの変更は行いません。',
               '容量は 1024 基準です。ディレクトリ内部の走査、サイズ集計、バックアップ内容の照合は未実施です。',
               '一覧は今回接続中のディスクのみ。接続されていないディスクの既存の目録は削除しません。',

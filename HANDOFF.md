@@ -2,7 +2,7 @@
 
 ## 最初に読むもの
 
-- [README](README.md)：ディスク容量と実験者コメントの台帳。最新の用途・重要度・削除可否はここを参照。
+- [README](README.md)：全ディスクの短い概要と入口。ディレクトリ別の用途・重要度・削除可否・解析概要は各ディスクの disks/<名前>/README.md を参照。詳細コメントはdisk-notesマーカー内に記録され、目録更新時にも保持する。
 - [Hirataの収集条件](analysis/hirata_conditions.md)：10 MGyから5 MGyへの変更履歴と格子定数。
 - [目録収集スクリプト](scripts/catalog.py)：マウント中のKBUの最上階層を収集。READMEのコメントを保持。
 - [リモート調査スクリプト](scripts/survey_zoo_source.py)：次のkuri04調査用。
@@ -69,7 +69,7 @@ ssh kuri04 'python3 - /user/target/Auto/2026A' \
 - この2台は改名を検討中。未実施。R001のTESTの削除可否は未確認。
 - KBU-005の231012-ZOOlogsは非常に重要。BL32XU/01.ZOOだけで約219 GiB、全体サイズ・ファイル数は未確定。集計プロセスは中断済み。
 - ZOOlogsは別リポジトリで目録・チェックサム・解析コードを管理し、原本は複数ストレージに保管する案。原本コピーも別リポジトリ作成も未実施。
-- KBU-005でコメント未整理：231211-PSII、Shioi、XDS2024、hirota。KBU-006も未整理。
+- KBU-005の全ディレクトリにコメントを記録済み。Shioiは論文化中・PDB登録済みの非常に重要な生データ。XDS2024/StayGoldは削除可・未削除。PSIIは共同研究の再検討候補。Hirotaの予備解析概要・図は analysis/hirota_density/README.md に保存。次の未整理ディスクはKBU-006。
 - 230629-benztryp全階層でnaokiを含むディレクトリ名は見つからなかった。他フォルダは未検索。
 
 ## 重要な判断・訂正
