@@ -1,0 +1,9 @@
+start 2026-11-05T16:53:19+09:00
+path: /mnt/knas/Data/BL32XU_250714_Hirata/WrongMirror
+drwxrwxr-x 108 kuntaro kuntaro 4096  7月 22  2025 WrongMirror
+size_bytes: 4082972667451
+files: 16470
+rm exit: 0
+end 2026-11-05T16:56:38+09:00
+ls: cannot access 'WrongMirror': No such file or directory
+10.10.122.187:/Volume1/public  182T  169T  3.8T  98% /mnt/knas
