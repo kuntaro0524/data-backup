@@ -24,6 +24,7 @@
 | [KBU-C3K-006](disks/KBU-C3K-006/README.md) | 16.3 TiB | 16.3 TiB | 1 | complete | 未整理 |
 | [KBU-C3K-007](disks/KBU-C3K-007/README.md) | 14.4 TiB | 13.7 TiB | 1 | complete | 未整理 |
 | [KBU-C3K-008](disks/KBU-C3K-008/README.md) | 14.4 TiB | 13.7 TiB | 1 | complete | 未整理 |
+| [FY2018-01](disks/FY2018-01/README.md) | 7.3 TiB | 830 GiB | 14（隠し項目を除く） | 手作業（2026-11-06） | 2018〜2019年度の測定。190126-AOMUSHIは結晶フィルム切り出し用パンチの測定（Lysozymeとみられる）。他は未聞き取り。KBUラベルなし。 |
 
 線量の変更履歴・格子定数の詳細は [Hirata 実験の記録](analysis/hirata_conditions.md)を参照。
 
