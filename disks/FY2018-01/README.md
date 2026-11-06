@@ -40,6 +40,27 @@
 - `_kamoproc/`（23 GB）：KAMOの処理結果。50フレームずつのウェッジ約280データセット。2019-01-26 10:44に自動処理、11:37にマージ（ccc・BLENDの両方、分解能1.4 Å／1.3 Å、`xscale`）。取り込み278セット、格子定数が揃ったもの272セット。KAMOが付けた空間群番号は89。
 - `image000〜003.ppm`：画像（顕微鏡画像とみられるが未確認）。
 - マージ結果の`.mtz`は見つからなかった。論文との対応は未確認。
+### OKKOTONUSHI の3フォルダ（2026-11-06、読み取りのみ）
+
+small wedgeのデータをKAMOでマージしたもの（利用者の説明）。試料の種類は未聞き取り。格子定数はa=b≈78.1 Å、c≈38.0 Å（AOMUSHIの78.2〜78.6／38.3〜38.4 Åより少し小さい）。マージ後のpointlessは空間群P4₁2₁2（92番）を提案。論文との対応、最終的な統計値（Rmeas、I/σ）は**未確認**。
+
+| フォルダ | 容量 | マージ結果 | 最大クラスタ（KAMO/BLENDの要約） |
+|---|---:|---|---|
+| `181108-okkotonushi` | 5.8 GB | `_kamoproc/merge_181108-110816/blend_1.5A_framecc_b+B/`（mtz 12個） | 44データセット、完全性92.7%、冗長度20.9 |
+| `181109-Okkotonushi` | 244 GB | `_kamoproc/merge_okkotonushi/`ほか（mtz 約150個） | 238データセット、完全性99.99%、冗長度71、分解能の目安1.48〜1.56 Å |
+| `190129-Okkotonushi` | 233 GB | `00.BolusScan/CPS0298-05/_kamoproc/merge_data2/ccc_1.3A_framecc_b+B/`（mtz 197個） | 166データセット、完全性99.99%、冗長度101.5（分解能設定1.3 Å） |
+
+**`181109-Okkotonushi`が最も充実**。
+
+- 測定：`Honban`（CPS1024-13〜15、各31〜70 GB）、`Test1`（CPS1024-01）、`Test2`（CPS1024-07〜09）。各サンプルは`data/`（h5）と`scan/`（2次元スキャン）。論文の「本番」が`Honban`かは名前からの推測で未確認。
+- 最良のマージ結果（最大クラスタ）：`_kamoproc/merge_okkotonushi/blend_1.5A_framecc_b+B/cluster_0237/run_03/ccp4/xscale.mtz`（`xscale.hkl`も同じ`run_03/`）。`run_01`・`run_02`にもmtzがあり、分解能の目安は run_01 が1.52 Å、run_02 が1.56 Å、run_03 が1.48 Å。
+- 画像（`181109-Okkotonushi`直下）：
+  - `coot.png`：Cootで電子密度マップ（青いメッシュ）にモデルを重ねた画面。座標・マップの出所は画像から分からない。
+  - `CPS1024-14.png`・`CPS1024-15.png`：KAMOの2次元スキャン（150×100グリッド、n_spotsのヒートマップ）の画面。
+  - `dddd.ps`・`ssss.ps`：未確認。
+- 画像（`Honban/`内）：`CPS1024-13〜15/scan/2d/_spotfinder/2d_selected_map.png`（各1枚）と、`CPS1024-14`の`thumb_2d/`のjpg 450枚（スポットファインダーのサムネイル）。`2d_selected_map.png`は、選ばれた測定位置（緑の丸、約200か所）を重ねた図。
+- 結晶の顕微鏡画像は、Honban内では見つかっていない。
+
 <!-- disk-notes:end -->
 
 ## 接続と識別
