@@ -70,5 +70,39 @@
    "BL32XU_260701_Hirata",
    "BL32XU_260707_Hirata"
   ]
+ },
+ "kamo_v2_draft_2026-11-11": {
+  "KBU-C3K-005": [
+   "BL32XU_260604_Hirata",
+   "BL32XU_260611_Hirata",
+   "BL32XU_260612_Hirata",
+   "BL32XU_260616_Hirata",
+   "BL32XU_260625_Hirata",
+   "BL32XU_260627_Hirata",
+   "BL32XU_260628_Hirata",
+   "BL32XU_260702_Hirata",
+   "BL32XU_260703_Hirata"
+  ],
+  "KBU-C3K-006": [
+   "BL32XU_260605_Hirata",
+   "BL32XU_260609_Hirata",
+   "BL32XU_260610_Hirata",
+   "BL32XU_260613_Hirata",
+   "BL32XU_260626_Hirata",
+   "BL32XU_260629_Hirata",
+   "BL32XU_260630_Hirata",
+   "BL32XU_260707_Hirata",
+   "BL32XU_260709_Hirata"
+  ],
+  "KBU-C3K-007": [
+   "BL32XU_260610_Hirata_2",
+   "BL32XU_260615_Hirata",
+   "BL32XU_260623_Hirata",
+   "BL32XU_260624_Hirata",
+   "BL32XU_260701_Hirata",
+   "BL32XU_260706_Hirata",
+   "BL32XU_260708_Hirata",
+   "BL32XU_260728_Hirata"
+  ]
  }
 }
